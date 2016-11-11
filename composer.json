@@ -1,0 +1,50 @@
+{
+    "name": "cert/letsencrypt-bundle",
+    "type": "symfony-bundle",
+    "description": "Free SSL/HTTPS for your Symfony application with automatic renewal and certificates monitoring",
+    "keywords": [
+        "symfony",
+        "letsencrypt",
+        "free",
+        "ssl",
+        "https",
+        "automatic",
+        "renewal",
+        "certificates",
+        "monitoring"
+    ],
+    "homepage": "https://github.com/nodesha88/LetsEncryptBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daria",
+            "email": "nodesha.nodesha@gmail.com",
+            "homepage": "https://github.com/nodesha88"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/console": "~2.3|~3.0",
+        "symfony/framework-bundle": "~2.3|~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.21",
+        "symfony/yaml": "~2.3|~3.0",
+        "swiftmailer/swiftmailer": "~4.3|~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cert\\LetsEncryptBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cert\\LetsEncryptBundle\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
